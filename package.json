@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "ha-store": "^1.14.2"
+    "ha-store": "^2.0.0"
   }
 }

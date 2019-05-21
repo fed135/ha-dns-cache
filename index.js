@@ -13,7 +13,6 @@ function haCache(opts) {
         });
       });
     },
-    batch: { tick: 0, max: Infinity },
     cache: opts,
   });
 
