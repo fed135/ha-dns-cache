@@ -8,3 +8,5 @@ CONTRIBUTING.md
 package-lock.json
 *.clinic*
 sample.txt
+benchmark.js
+.gitignore
