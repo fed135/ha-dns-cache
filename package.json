@@ -1,13 +1,32 @@
 {
   "name": "ha-dns-cache",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fed135/ha-dns-cache.git"
+  },
+  "keywords": [
+    "cache",
+    "batch",
+    "congestion",
+    "control",
+    "dns",
+    "resolve",
+    "lookup"
+  ],
+  "bugs": {
+    "url": "https://github.com/fed135/ha-store/issues"
+  },
+  "author": "frederic charette <fredericcharette@gmail.com>",
+  "license": "Apache-2.0",
   "dependencies": {
     "ha-store": "^2.0.3"
   },
