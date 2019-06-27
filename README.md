@@ -3,7 +3,7 @@
 A DNS cache using [ha-store](https://github.com/fed135/ha-store)!
 
 - Smart TLRU cache
-- Request coalescing, batching and retrying
+- Request coalescing and batching
 - Insightful stats and [events](https://github.com/fed135/ha-store#Monitoring-and-events)
 - Lightweight, configurable, battle-tested
 
@@ -16,10 +16,9 @@ A DNS cache using [ha-store](https://github.com/fed135/ha-store)!
 ## Usage
 
 ```node
-const DNSCache = require('ha-dns-cache');
+const DNSCache = require('ha-dns-cache')({ ttl: 30000, limit: 500 });
 
-const cache = DNSCache({ ttl: 30000, limit: 500 });
-cache.on('cacheHit', evt => console.log('cache-hit!', evt));
+DNSCache.on('cacheHit', evt => console.log('cache-hit!', evt));
 ```
 
 ## Testing
