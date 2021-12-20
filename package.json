@@ -1,13 +1,14 @@
 {
   "name": "ha-dns-cache",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "bench": "node ./benchmark.js",
+    "bench:no-cache": "NO_CACHE=1 node ./benchmark.js"
   },
   "engines": {
-    "node": ">=8.0.0"
+    "node": ">=12.0.0"
   },
   "repository": {
     "type": "git",
@@ -28,9 +29,6 @@
   "author": "frederic charette <fredericcharette@gmail.com>",
   "license": "Apache-2.0",
   "dependencies": {
-    "ha-store": "^2.0.3"
-  },
-  "devDependencies": {
-    "axios": "^0.19.0"
+    "ha-store": "^3.1.0"
   }
 }
