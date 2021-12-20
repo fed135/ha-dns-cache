@@ -23,7 +23,17 @@ DNSCache.on('cacheHit', evt => console.log('cache-hit!', evt));
 
 ## Testing
 
-(TODO)
+You can benchmark this library by running:
+
+```
+npm run bench
+```
+
+And compare with regular results:
+
+```
+npm run bench:no-cache
+```
 
 
 ## Contribute
@@ -35,5 +45,5 @@ I am always looking for more maintainers, as well.
 
 ## License 
 
-[Apache 2.0](LICENSE) (c) 2020 Frederic Charette
+[Apache 2.0](LICENSE) (c) 2021 Frederic Charette
 
